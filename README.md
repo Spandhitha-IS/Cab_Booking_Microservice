@@ -9,11 +9,11 @@
     - [Other Tools and Libraries](#other-tools-and-libraries)
 - [Backend Dependencies](#backend-dependencies)
 - [Module Documentation](#module-documentation)
-    - [User Module](./User_Module.md)
-    - [Driver Module](./Driver_Module.md)
-    - [Ride Module](./Ride_Module.md)
-    - [Payment Module](./Payment_Module.md)
-    - [Rating Module](./Rating_Module.md)
+    - [User Module](./Documentation/User_Module.md)
+    - [Driver Module](./Documentation/Driver_Module.md)
+    - [Ride Module](./Documentation/Ride_Module.md)
+    - [Payment Module](./Documentation/Payment_Module.md)
+    - [Rating Module](./Documentation/Rating_Module.md)
 - [How to Run This Project with Eureka and API Gateway](#how-to-run-this-project-with-eureka-and-api-gateway)
 - [Project Contributors](#project-contributors)
 
@@ -25,7 +25,7 @@
 * Each module is designed to interact cohesively, delivering a robust and scalable solution for cab booking services.
 
 ## Architecture Diagram
-![MicroService Architecture Diagram](image.png)
+![MicroService Architecture Diagram](Documentation/image.png)
 
 ## Technologies Used
 
@@ -39,7 +39,7 @@
 
 ### Frontend
 - **Framework**: React.js  
-- **Styling**: CSS/Bootstrap  
+- **Styling**: CSS/Tailwind  
 
 ### Other Tools and Libraries
 - **Logging**: SLF4J and Logback  
@@ -60,20 +60,20 @@
 - **Swagger/OpenAPI**: For API documentation and testing.  
 
 ## Module Documentation
-- [User Module](./User_Module.md)  
-  ### Handles user registration, login, and profile management
+[User Module](./Documentation/User_Module.md)  
+Handles user registration, login, and profile management
 
-- [Driver Module](./Driver_Module.md)
-  ### Manages driver profiles, vehicle details, and availability status  
+[Driver Module](./Documentation/Driver_Module.md)  
+Manages driver profiles, vehicle details, and availability status  
 
-- [Ride Module](./Ride_Module.md)
-  ### Booking Facilitates cab booking, ride status management, and driver assignment
+[Ride Module](./Documentation/Ride_Module.md)   
+Booking Facilitates cab booking, ride status management, and driver assignment
 
-- [Payment Module](./Payment_Module.md)  
-  ### Supports fare calculation, payment processing, and receipt generation
+[Payment Module](./Documentation/Payment_Module.md)  
+Supports fare calculation, payment processing, and receipt generation
 
-- [Rating Module](./Rating_Module.md)  
-  ### Allows users and drivers to rate and review each other post-ride.
+[Rating Module](./Documentation/Rating_Module.md)  
+Allows users and drivers to rate and review each other post-ride.
 
 ## How to Run This Project with Eureka and API Gateway
 

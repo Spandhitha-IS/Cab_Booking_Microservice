@@ -11,6 +11,7 @@
     - [Service Layer](#service-layer)
     - [Repository/Data Access Layer](#repositorydata-access-layer)
 - [API Endpoints](#api-endpoints)
+- [API Documentation of Driver Module](#api-documentation-of-driver-module)
 
 ---
 
@@ -88,3 +89,9 @@ The Driver Module follows a classic 3-layered architecture:
 | GET    | /api/drivers/available     | Retrieve all available drivers            |
 | PUT    | /api/drivers/status        | Update driver availability status         |
 | GET    | /api/drivers/profile       | Retrieve driver profile information       |
+
+
+## API Documentation of Driver Module
+
+ [Driver Endpoints](/API_documentation/Driver.md)
+ 

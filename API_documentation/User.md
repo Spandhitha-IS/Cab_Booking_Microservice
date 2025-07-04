@@ -20,7 +20,16 @@
 **Response:**  
 **Status Code:** `200`  
 **Message:**  
-`User registered successfully!`
+```json
+{
+  "success": true,
+  "message": "User registered successfully!",
+  "data": null
+}
+```
+
+  
+
 
 ---
 
@@ -38,9 +47,13 @@
 
 **Response:**  
 **Status Code:** `200`  
-**Example Token:**  
-```
-eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzcnVqYW5AZ21haWwuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3NDg5NjI4ODIsImV4cCI6MTc0OTA0OTI4Mn0.Qcd54SEXsafYZ_F4ElyoldfkawhBBGAeFjPiXy-jRyU
+  
+```json
+{
+  "success": true,
+  "message": "Login successful",
+  "data": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzcnVqYW5AZ21haWwuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3NTE2MDU1MDgsImV4cCI6MTc1MTY5MTkwOH0.JZ-KL3n1UyLhYMaWzvG6EuNTqmyukQqAAtWbC5udHA8"
+}
 ```
 
 ---
@@ -57,13 +70,13 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzcnVqYW5AZ21haWwuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQ
 **Example Response Body:**  
 ```json
 {
-  "userId": 1,
-  "name": "Srujan G S",
+  "userId": 2,
+  "name": "srujan",
   "email": "srujan@gmail.com",
-  "phone": "9148147745",
-  "passwordHash": "$2a$10$1VqTgnz0Qh70Q/uscI/YkuKa355VAuRLRYr9RpTtFTLBIzE4AvJkC",
+  "phone": "12456789",
+  "passwordHash": "$2a$10$Nlar6JJ4iAgGjIBUXPK35OSYrzvt2DzukAUk6wmR7Q6gip1kbtrZG",
   "role": "USER",
-  "createdAt": "2025-06-03T20:27:03.414282400"
+  "createdAt": "2025-07-04T10:34:48.122665900"
 }
 ```
 

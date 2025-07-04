@@ -11,7 +11,7 @@
     - [Service Layer](#service-layer)
     - [Repository/Data Access Layer](#repositorydata-access-layer)
 - [API Endpoints](#api-endpoints)
-
+- [API Documentation of Ride Module](#api-documentation-of-ride-module)
 ---
 
 ## Module Overview
@@ -46,11 +46,9 @@ The **Ride Module** manages ride-related functionalities within the Cab Booking 
 ![Ride component diagram](./component/ride.png)
 
     
-```
-
 ## Layered Architecture of Ride Module
 
-The Ride Module follows a classic 3-layered architecture:
+The **Ride Module** follows a classic 3-layered architecture:
 
 ### Controller Layer
 - **Purpose**: Handles HTTP requests and maps them to service methods.
@@ -82,3 +80,8 @@ The Ride Module follows a classic 3-layered architecture:
 | POST   | /api/rides/book               | Book a new ride                             |
 | PUT    | /api/rides/status/{id}        | Update the status of a ride                 |
 | GET    | /api/rides/user/{userId}      | Retrieve ride history for a specific user   |
+
+
+## API Documentation of Ride Module
+
+ [Ride Endpoints](/API_documentation/Ride.md)

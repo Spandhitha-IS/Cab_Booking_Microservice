@@ -23,61 +23,16 @@
 - **Example Response Body:**  
   ```json
   
-
-  "rideId": 2,
-
-  "user": {
-
-    "userId": 1,
-
-    "name": "Srujan G S",
-
-    "email": "srujan@gmail.com",
-
-    "phone": "9148147745",
-
-    "passwordHash": "$2a$10$wKQmqNLVkW8C0GMR/XyCAe9KyKdsiGuv.zGhrTQsGfj5wb/0X6r7u",
-
-    "role": "USER",
-
-    "createdAt": "2025-06-19T10:46:00.057796800"
-
-  },
-
-  "driver": {
-
-    "driverId": 1,
-
-    "name": "John Doe",
-
-    "phone": "9876543210",
-
-    "licenseNumber": "DL123456789",
-
-    "vehicleDetails": "Toyota Prius, White, 2020",
-
-    "passwordHash": "$2a$10$7TuyME2DYNlTkK56Onr3BesK.VpDXmS6owcY2Vc5UmG/DfsCQFwV6",
-
-    "available": false,
-
-    "role": "DRIVER"
-
-  },
-
+  "rideId": 6,
+  "userId": 2,
+  "driverId": 1,
   "pickupLocation": "Cognizant CDC",
-
-  "dropoffLocation": "Metro Food court",
-
-  "fare": 139.8553756666655,
-
+  "dropoffLocation": "Tiptop",
+  "fare": 193.96084927997458,
   "status": "REQUESTED"
 
 
- 
-  ```
-
----
-
+  
 ## Update Ride Status
 **Endpoint:**  
 `PUT http://localhost:8080/api/rides/status`  
@@ -93,7 +48,9 @@
 - **Body:**  
   ```json
   {
-    "message": "Ride status updated"
+    "success": true,
+  "message": "Ride status updated successfully",
+  "data": null
   }
   ```
 
@@ -111,58 +68,15 @@
 - **Example Response Body:**  
   ```json
   
-
   {
-    "rideId": 1,
-    "user": {
-      "userId": 1,
-      "name": "Srujan G S",
-      "email": "srujan@gmail.com",
-      "phone": "9148147745",
-      "passwordHash": "$2a$10$wKQmqNLVkW8C0GMR/XyCAe9KyKdsiGuv.zGhrTQsGfj5wb/0X6r7u",
-      "role": "USER",
-      "createdAt": "2025-06-19T10:46:00.057796800"
-    },
-    "driver": {
-      "driverId": 1,
-      "name": "John Doe",
-      "phone": "9876543210",
-      "licenseNumber": "DL123456789",
-      "vehicleDetails": "Toyota Prius, White, 2020",
-      "passwordHash": "$2a$10$7TuyME2DYNlTkK56Onr3BesK.VpDXmS6owcY2Vc5UmG/DfsCQFwV6",
-      "available": false,
-      "role": "DRIVER"
-    },
+    
+    "rideId": 6,
+    "userId": 2,
+    "driverId": 1,
     "pickupLocation": "Cognizant CDC",
-    "dropoffLocation": "Metro Food court",
-    "fare": 236.3462644620552,
+    "dropoffLocation": "Tiptop",
+    "fare": 193.96084927997458,
     "status": "COMPLETED"
-  },
-  {
-    "rideId": 2,
-    "user": {
-      "userId": 1,
-      "name": "Srujan G S",
-      "email": "srujan@gmail.com",
-      "phone": "9148147745",
-      "passwordHash": "$2a$10$wKQmqNLVkW8C0GMR/XyCAe9KyKdsiGuv.zGhrTQsGfj5wb/0X6r7u",
-      "role": "USER",
-      "createdAt": "2025-06-19T10:46:00.057796800"
-    },
-    "driver": {
-      "driverId": 1,
-      "name": "John Doe",
-      "phone": "9876543210",
-      "licenseNumber": "DL123456789",
-      "vehicleDetails": "Toyota Prius, White, 2020",
-      "passwordHash": "$2a$10$7TuyME2DYNlTkK56Onr3BesK.VpDXmS6owcY2Vc5UmG/DfsCQFwV6",
-      "available": false,
-      "role": "DRIVER"
-    },
-    "pickupLocation": "Cognizant CDC",
-    "dropoffLocation": "Metro Food court",
-    "fare": 139.8553756666655,
-    "status": "REQUESTED"
   }
 
   ```

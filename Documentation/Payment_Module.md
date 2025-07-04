@@ -11,6 +11,7 @@
     - [Service Layer](#service-layer)
     - [Repository/Data Access Layer](#repositorydata-access-layer)
 - [API Endpoints](#api-endpoints)
+- [API Documentation of Payment Module](#api-documentation-of-payment-module)
 
 ---
 
@@ -80,3 +81,9 @@ The Ride Module follows a classic 3-layered architecture:
 | POST   | /api/rides/book               | Book a new ride                             |
 | PUT    | /api/rides/status/{id}        | Update the status of a ride                 |
 | GET    | /api/rides/user/{userId}      | Retrieve ride history for a specific user   |
+
+
+
+## API Documentation of Payment Module
+
+ [Payment  Endpoints](/API_documentation/Payment.md)

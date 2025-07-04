@@ -11,6 +11,7 @@
     - [Service Layer](#service-layer)
     - [Repository/Data Access Layer](#repositorydata-access-layer)
 - [API Endpoints](#api-endpoints)
+- [API Documentation of Rating Module](#api-documentation-of-rating-module)
 
 ---
 
@@ -18,6 +19,8 @@
 The **Rating Module** manages rating and feedback functionalities within the Cab Booking System. It enables users to rate drivers after rides and allows drivers to access their ratings. This module promotes transparency and service quality improvement.
 
 ---
+
+
 
 ## Key Features
 - **Submit Rating**: Users can rate drivers and provide optional feedback after rides.
@@ -43,22 +46,6 @@ The **Rating Module** manages rating and feedback functionalities within the Cab
 
 ![Rating component diagram](./component/rating.png)
 
-    subgraph Entity Layer
-        Rating["Rating"]
-    end
-
-    subgraph DTO Layer
-        RatingRequest["RatingRequest"]
-    end
-
-    RatingController --> RatingServiceImpl
-    RatingServiceImpl --> RatingService
-    RatingServiceImpl --> RatingRepository
-    RatingRepository --> Rating
-    RatingController --> RatingRequest
-```
-
----
 
 ## Layered Architecture of Rating Module
 
@@ -91,4 +78,18 @@ The **Rating Module** follows a classic 3-layered architecture:
 |------------|-------------------------------|------------------------------------------|
 | `POST`     | `/api/ratings`               | Submit a new rating and feedback         |
 | `GET`      | `/api/ratings/user/{userId}` | Retrieve ratings for a specific user/driver |
-```	
+
+
+
+## API Documentation of Rating Module
+
+[Rating Endpoints](/API_documentation/Rating.md)
+
+
+
+
+
+
+
+ 
+ 

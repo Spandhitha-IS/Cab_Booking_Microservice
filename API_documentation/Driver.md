@@ -20,8 +20,16 @@
 
 **Response:**  
 - **Status Code:** `200`  
-- **Message:**  
-  `Driver registered successfully!`
+- **Message:** 
+```json 
+{
+  "success": true,
+  "message": "Driver registered successfully!",
+  "data": null
+}
+
+
+  ```
 
 ---
 
@@ -42,45 +50,14 @@
 
 **Response:**  
 - **Status Code:** `200`  
-- **Example Token:**  
-  ```plaintext
-  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ODc2NTQzMjEwIiwicm9sZSI6IkRSSVZFUiIsImlhdCI6MTc0ODk2Mjg4MiwiZXhwIjoxNzQ5MDQ5MjgyfQ.Qcd54SEXsafYZ_F4ElyoldfkawhBBGAeFjPiXy-jRyU
-  ```
 
----
-
-## Get Available Drivers
-**Endpoint:**  
-`GET http://localhost:8080/api/drivers/available`  
-
-**Headers:**  
-`Authorization: Bearer <driver-token>`  
-
-**Response:**  
-- **Status Code:** `200`  
-- **Example Response Body:**  
   ```json
-  [
-    {
-      "driverId": 1,
-      "name": "John Doe",
-      "phone": "9876543210",
-      "licenseNumber": "DL123456789",
-      "vehicleDetails": "Toyota Prius, White, 2020",
-      "status": "AVAILABLE"
-    },
-    {
-      "driverId": 2,
-      "name": "Jane Smith",
-      "phone": "9876543211",
-      "licenseNumber": "DL987654321",
-      "vehicleDetails": "Honda Civic, Black, 2019",
-      "status": "AVAILABLE"
-    }
-  ]
-  ```
+  
+  "success": true,
+  "message": "Login successful",
+  "data": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5ODU2NDM3ODMyIiwicm9sZSI6IkRSSVZFUiIsImlhdCI6MTc1MTYwNTg0MSwiZXhwIjoxNzUxNjkyMjQxfQ.ars19JnhO6UmLSFFjXLvGicNoqT9P44dwwkIUuec5n4"
 
----
+
 
 ## Update Driver Status
 **Endpoint:**  
@@ -97,7 +74,12 @@
 - **Body:**  
   ```json
   {
-    "message": "Driver status updated"
+    
+  "success": true,
+  "message": "Driver status updated successfully",
+  "data": null
+
+    
   }
   ```
 
@@ -115,13 +97,13 @@
 - **Example Response Body:**  
   ```json
   {
-    "driverId": 1,
-    "name": "John Doe",
-    "phone": "9876543210",
-    "licenseNumber": "DL123456789",
-    "vehicleDetails": "Toyota Prius, White, 2020",
-    "passwordHash": "$2a$10$bloK2QzSD2pnkbUkw5FUmeudlM21ig9npmNf47a.vRLaJGAnr3ep6",
-    "available": true,
-    "role": "DRIVER"
+    "driverId": 2,
+  "name": "ram",
+  "phone": "9856437831",
+  "licenseNumber": "DL1209776780",
+  "vehicleDetails": "Tour H3, White, 2020",
+  "passwordHash": "$2a$10$7cbZZLuFABkC7xONmxz9eesljn8SI6ody76orn7XF45KXVkZsLC7i",
+  "available": false,
+  "role": "DRIVER"
   }
   ```

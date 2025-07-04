@@ -10,6 +10,7 @@
   - [2. Service Layer](#2-service-layer)
   - [3. Repository/Data Access Layer](#3-repositorydata-access-layer)
 - [API Endpoints](#api-endpoints)
+- [API Documentation of User Module](#api-documentation-of-user-module)
   
 
 ## Module overview 
@@ -79,3 +80,7 @@ The **User Module** follows a classic 3-layered architecture to ensure separatio
 | POST        | /api/users/login       | Authenticate user and get JWT      | UserLoginRequest (JSON)       |
 | GET         | /api/users/profile     | Get authenticated user's profile   | JWT in Authorization header   |
 
+
+## API Documentation of User Module
+
+ [User Endpoints](/API_documentation/User.md)

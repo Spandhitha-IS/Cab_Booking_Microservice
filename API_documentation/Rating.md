@@ -14,10 +14,11 @@ Submit a rating for a completed ride.
 **Body:**
 ```json
 {
-  "rideId": 2,
+
   "score": 5,
   "comments": "Great ride! Very professional driver."
 }
+
 ```
 
 ### Response
@@ -25,31 +26,8 @@ Submit a rating for a completed ride.
 **Body:**
 ```json
 {
-  "ratingId": 1,
-  "ride": {
-    "rideId": 2,
-    "user": {
-      "userId": 2,
-      "name": "Manjiri",
-      "email": "manjiri@gmail.com",
-      "phone": "9876543210",
-      "role": "USER",
-      "createdAt": "2025-06-19T09:33:43.869294700"
-    },
-    "driver": {
-      "driverId": 1,
-      "name": "Ram",
-      "phone": "9845627745",
-      "licenseNumber": "DL12345456",
-      "vehicleDetails": "BenZ, White, 2020",
-      "available": true,
-      "role": "DRIVER"
-    },
-    "pickupLocation": "CDC cognizant",
-    "dropoffLocation": "Metro Food Court",
-    "fare": 180.55,
-    "status": "COMPLETED"
-  },
+  "ratingId": 3,
+  "rideId": 6,
   "fromUserId": 2,
   "toUserId": 1,
   "score": 5,
@@ -77,34 +55,28 @@ Retrieve all ratings received by a driver.
 [
   {
     "ratingId": 1,
-    "ride": {
-      "rideId": 2,
-      "user": {
-        "userId": 2,
-        "name": "Manjiri",
-        "email": "manjiri@gmail.com",
-        "phone": "9876543210",
-        "role": "USER",
-        "createdAt": "2025-06-19T09:33:43.869294700"
-      },
-      "driver": {
-        "driverId": 1,
-        "name": "Ram",
-        "phone": "9845627745",
-        "licenseNumber": "DL12345456",
-        "vehicleDetails": "BenZ, White, 2020",
-        "available": true,
-        "role": "DRIVER"
-      },
-      "pickupLocation": "CDC cognizant",
-      "dropoffLocation": "Metro Food Court",
-      "fare": 180.55,
-      "status": "COMPLETED"
-    },
+    "rideId": 1,
+    "fromUserId": 1,
+    "toUserId": 1,
+    "score": 5,
+    "comments": "Great ride! Very professional driver."
+  },
+  {
+    "ratingId": 2,
+    "rideId": 5,
+    "fromUserId": 1,
+    "toUserId": 1,
+    "score": 5,
+    "comments": "Great ride! Very professional driver."
+  },
+  {
+    "ratingId": 3,
+    "rideId": 6,
     "fromUserId": 2,
     "toUserId": 1,
     "score": 5,
     "comments": "Great ride! Very professional driver."
   }
 ]
+
 ```
